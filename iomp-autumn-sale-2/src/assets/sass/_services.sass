@@ -1,0 +1,58 @@
+// services
+.services
+	margin: 150px 0
+
+	&-blocks-wrapper
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+
+	&-block
+		width: 49%
+		margin-bottom: 25px
+		border-radius: 2px
+		position: relative
+		padding: 50px
+		border: 1px solid $gray
+		+transition
+		&:hover
+			color: $white
+			background-color: $mainColor
+			border: 1px solid $mainColor
+
+		&_small
+			width: 49%
+
+		&__number
+			position: absolute
+			top: 20px
+			left: 20px
+			font-size: 18px
+			color: $gray
+
+		&__title
+			font-size: 36px
+			margin-bottom: 25px
+
+		&__description
+			font-size: 24px
+
+	&-btn
+		display: flex
+		justify-content: center
+
+		&__btn
+			width: 50%
+
+	&-circle1, &-circle2
+		width: 480px
+		height: 480px
+		position: absolute
+
+	&-circle1
+		left: -50px
+
+	&-circle2
+		right: -50px
+		top: 50%
+		transform: translateY(-50%)
