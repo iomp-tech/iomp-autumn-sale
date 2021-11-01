@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="description" content="Осенняя распродажа IOMP" />
+        <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.png" />
+        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+        <title>Осенняя распродажа IOMP</title>
+    </head>
+    <body>
+        <noscript
+            >Вам необходимо включить JavaScript для запуска этого
+            приложения.</noscript
+        >
+        <div id="root"></div>
+
+        <!-- AutoWebOffice counter -->
+        <script type="text/javascript">
+            if (awoUtmData === undefined) {
+                var awoUtmData = awoUtmData || {};
+                awoUtmData["subdomain"] = "iomp";
+                (function () {
+                    var d = document.createElement("script");
+                    d.type = "text/javascript";
+                    d.async = true;
+                    d.src =
+                        ("https:" == document.location.protocol
+                            ? "https://"
+                            : "http://") + "iomp.autoweboffice.ru/js/utm.js";
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(d, s);
+                })();
+            }
+        </script>
+        <!-- /AutoWebOffice counter -->
+    </body>
+</html>

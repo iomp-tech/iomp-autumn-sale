@@ -1,0 +1,27 @@
+// goods-closed
+.goods-closed
+	margin: 125px 0
+
+	&-item
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding: 50px 0
+
+		border-top: 1px solid $gray
+
+		&:last-child
+			border-bottom: 1px solid $gray
+
+		&__title
+			width: 40%
+			font-size: 32px
+
+		&-price
+			&__subprice
+				font-size: 18px
+				color: $gray
+				text-decoration: line-through
+
+			&__price
+				font-size: 28px
