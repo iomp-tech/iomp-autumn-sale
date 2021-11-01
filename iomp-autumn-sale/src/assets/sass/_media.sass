@@ -1,0 +1,335 @@
+// media - adaptive system
+@media screen and (max-width: 1200px)
+	// main
+	.main
+		&-text
+			&__title
+				font-size: 54px
+
+@media screen and (max-width: 1150px)
+	// header
+	.header
+		&-menu-hidden
+			display: none
+
+		&-menu-burger
+			display: block
+
+@media screen and (max-width: 1100px)
+	// main
+	.main
+		&-wrapper
+			flex-direction: column
+			align-items: flex-start
+			justify-content: center
+
+		&-text
+			width: 100%
+
+		&-image
+			width: 100%
+			display: flex
+			justify-content: center
+
+			margin-top: 100px
+
+	// services
+	.services
+		&-blocks-wrapper
+			flex-direction: column
+
+		&-block
+			width: 100%
+
+		&-btn
+			&__btn
+				width: 100%
+
+	// goods-stock
+	.goods-stock
+		&-item
+			&-bottom
+				&__btn
+					width: 100%
+
+	// teacher
+	.teacher
+		&-wrapper
+			flex-direction: column
+			align-items: flex-start
+			justify-content: center
+
+		&-text
+			width: 100%
+			order: 1
+
+		&-image
+			margin-top: 100px
+
+			display: flex
+			justify-content: center
+
+			width: 100%
+			order: 2
+
+@media screen and (max-width: 900px)
+	// interface
+	.title, .title__mb
+		font-size: 36px
+
+	// header
+	.header
+		&-modal
+			&-content
+				justify-content: flex-start
+
+		&-wrapper-top
+			display: none
+
+	// main
+	.main
+		margin: 75px 0
+
+	// services
+	.services
+		margin: 75px 0
+
+		&-block
+			padding: 25px
+
+			&__number
+				display: none
+
+			&__title
+				font-size: 24px
+
+			&__description
+				font-size: 21px
+
+		&-circle1, &-circle2
+			display: none
+
+	// goods-stock
+	.goods-stock
+		margin: 75px 0
+
+		&-item
+			&-block
+				padding: 25px
+
+				flex-direction: column
+				align-items: flex-start
+
+				&__title
+					width: 100%
+
+				&-price
+					margin-top: 50px
+
+	// goods-closed
+	.goods-closed
+		margin: 75px 0
+
+		&-item
+			flex-direction: column
+			align-items: flex-start
+
+			&__title
+				width: 100%
+
+			&-price
+				margin-top: 50px
+
+			&__btn
+				width: 100%
+				margin-top: 75px
+
+	// teacher
+	.teacher
+		margin: 75px 0
+
+	// footer
+	.footer
+		&-media
+			display: flex
+			justify-content: space-between
+
+		&-middle
+			margin-top: 0
+			justify-content: flex-end
+
+			&-left
+				width: 80%
+
+		&-bottom-bottom
+			flex-direction: column
+			align-items: flex-start
+			justify-content: flex-start
+
+			& > .nagibinstudio
+				margin-top: 50px
+
+		&-nav
+			display: none
+
+@media screen and (max-width: 820px)
+	// header
+	.header
+		&__btn, &-right
+			display: none
+
+@media screen and (max-width: 700px)
+	// footer
+	.footer
+		&-bottom-bottom
+			display: flex
+			flex-direction: column
+
+			&__link
+				display: block
+				margin-right: 0
+				margin-bottom: 15px
+
+@media screen and (max-width: 640px)
+	// footer
+	.footer
+		&-bottom-right
+			align-items: flex-start
+			display: flex
+			flex-direction: column
+
+		&-bottom
+			align-items: flex-start
+			&__link
+				margin-left: 0
+				&:first-child
+					margin-bottom: 25px
+
+@media screen and (max-width: 600px)
+	// footer
+	.footer
+		&-wrapper
+			flex-direction: column
+			align-items: center
+
+	.nagibinstudio
+		margin-bottom: 25px
+
+@media screen and (max-width: 540px)
+	// interface
+	.title, .title__mb
+		font-size: 24px
+
+	// header
+	.header
+		&-modal
+			&-content
+				padding-left: 25px
+				padding-top: 50px
+				padding-right: 50px
+
+			&-logo__img
+				width: 200px
+
+			&__link, &-phone__link
+				font-size: 36px
+
+	// main
+	.main
+		&-text
+			&__title
+				font-size: 32px
+
+		&-image
+			&__image
+				width: 300px
+
+	// goods-stock
+	.goods-stock
+		&-item
+			&-block
+				&__title
+					font-size: 24px
+
+			&-bottom
+				&__description
+					font-size: 21px
+
+	// goods-closed
+	.goods-closed
+		&-item
+			&__title
+				font-size: 24px
+
+	// teacher
+	.teacher
+		&-text
+			&-ul
+				&__li
+					font-size: 18px
+
+		&-image
+			margin-top: 50px
+			&__image
+				width: 300px
+
+	// footer
+	.footer
+		&-media
+			flex-direction: column
+
+		&-middle
+			&-left
+				margin-top: 50px
+				width: 100%
+
+		&-wrapper
+			flex-direction: column
+
+		&-bottom
+			margin-top: 25px
+
+@media screen and (max-width: 480px)
+	//header
+	.header
+		&-modal
+			&-close
+				left: 30px
+				top: 45px
+
+				& > svg
+					width: 35px
+					height: 35px
+
+			&-logo__img
+				display: none
+
+@media screen and (max-width: 460px)
+	// interface
+	.title
+		font-size: 32px
+
+	// footer
+	.footer
+		&-bottom
+			flex-direction: column
+
+			&-right
+				margin-top: 25px
+
+@media screen and (max-width: 420px)
+	// header
+	.header
+		&-logo__img
+			width: 180px
+
+@media screen and (max-width: 390px)
+	// interface
+	.title
+		font-size: 28px
+
+	// header
+	.header
+		&-modal
+			&__link, &-phone__link
+				font-size: 24px

@@ -1,0 +1,51 @@
+// goods-stock
+.goods-stock
+	&-item
+		margin-bottom: 125px
+
+		&:last-child
+			margin-bottom: 0
+
+		&-block
+			margin-bottom: 25px
+	
+			padding: 50px
+			border: 1px solid $gray
+
+			display: flex
+			justify-content: space-between
+			align-items: center
+
+			&:last-child
+				margin-bottom: 0
+		
+			&__title
+				width: 40%
+				font-size: 32px
+
+			&-price
+				&__subprice
+					font-size: 18px
+					color: $gray
+					text-decoration: line-through
+
+				&__price
+					font-size: 28px
+
+					& span
+						color: $gray
+						font-size: 18px
+						+light
+
+		&-bottom
+			display: flex
+			flex-direction: column
+			align-items: center
+
+			&__description
+				text-align: center
+				margin: 35px 0
+				font-size: 24px
+
+			&__btn
+				width: 50%
