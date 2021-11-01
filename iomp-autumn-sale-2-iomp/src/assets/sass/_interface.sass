@@ -1,0 +1,120 @@
+// mixin
+@mixin transition
+	transition: all .4s ease
+
+*
+	margin: 0
+	padding: 0
+	outline: none
+	box-sizing: border-box
+
+	&::selection
+		background-color: #B4D5FE
+
+body
+	font-size: 15px
+	color: $black
+	overflow-y: scroll
+	+light
+
+// title
+h1,h2,h3,h4,h5,h6
+	line-height: 1.2em
+	+bold
+
+.title
+	font-size: 42px
+
+	& span
+		color: $mainColor
+
+.title__mb
+	font-size: 42px
+	margin-bottom: 50px
+
+	& span
+		color: $mainColor
+
+.subtitle
+	display: block
+
+	font-size: 24px
+	color: $gray
+
+	margin-bottom: 10px
+
+// description
+p
+	line-height: 1.5em
+
+.description
+	font-size: 24px
+
+// link
+a
+	text-decoration: none
+	color: $black
+
+// list
+li
+	line-height: 1.5em
+
+// container
+.container
+	position: relative
+	width: 90%
+	margin: 0 auto
+
+	max-width: 1200px
+
+// btn
+.btn-regular_color
+	cursor: pointer
+	line-height: 1.5em
+	user-select: none
+	text-align: center
+	display: inline-block
+	border-radius: 2px
+	border: 1px solid $mainColor
+	background-color: transparent
+	color: $mainColor
+	padding: 20px 40px
+	font-size: 15px
+	+light
+	+transition
+	&:hover
+		background-color: $mainColor
+		color: $white
+		
+.btn-bold_color
+	cursor: pointer
+	line-height: 1.5em
+	user-select: none
+	text-align: center
+	display: inline-block
+	border-radius: 2px
+	border: none
+	font-size: 15px
+	background-color: $mainColor
+	color: $white
+	padding: 20px 40px
+	+transition
+	+light
+	&:hover
+		background-color: #1A17EA
+
+// circle
+.circle
+	&-wrapper
+		position: relative
+		z-index: -1
+
+	&-regular
+		z-index: -1
+		border-radius: 50%
+		border: 1px solid $gray
+
+	&-bold
+		z-index: -1
+		border-radius: 50%
+		background-color: $lightMainColor
